@@ -1,0 +1,484 @@
+@import url("menu.css");
+@import url("landing.css");
+
+/* ----- Common ----- */
+
+body {
+	margin: 0px;
+	font-family: "SF Pro Display", Calibri, Candara, Optima, Arial, sans-serif;
+}
+
+#page-wrapper {position:relative;}
+
+#main-wrapper {
+	background: #fff;
+	max-width: 980px;
+	border-radius: 5px; 
+	box-shadow: 2px 2px 5px #0005;
+	margin: auto;
+	padding: 10px;
+}
+
+
+a {
+	color: #0071B3;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:active, a:focus  {
+    color: #018FE2;
+    text-decoration: underline;
+}
+
+
+.left {float: left;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+ul { list-style: none; }
+
+.feed-icons {display:none;}
+
+
+article header .node__meta {display:none;}
+
+/* ----- Common ----- */
+/* ----- User Menu ----- */
+
+.navbar-toggler {display: none;}
+
+/* ----- User Menu ----- */
+/* ----- Image field display ----- */
+
+.field--name-field-image {	
+	display: none;
+	float: left;	
+}
+
+/* ----- Image field display ----- */
+/* ----- Logo ----- */
+
+a#logo {
+	display: block;
+	width: 224px;
+	height: 200px;
+	background-image: url("img/logo_glossy.png");
+}
+
+/* ----- Logo ----- */
+/* ----- Paralax ----- */
+
+#paralax-bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -10;
+}
+
+#paralax-bg img.bg {
+	width: 100%;
+	-webkit-mask: linear-gradient(#fff 80%, transparent);
+	mask:linear-gradient(#fff 75%, transparent);
+    position: absolute;
+    z-index: -100;
+}
+
+#paralax-fg {
+    position: absolute;
+    top: 140px;
+    z-index: 10;
+    width: 100%;
+}
+#paralax-fg .content {
+	display: block;
+    margin: 0px auto;
+    width: 730px;
+    padding: 0 0 0 250px;
+	color: #fff;
+	text-shadow: 1px 1px 5px #0005;
+	text-align:left;
+}
+
+#paralax-fg .content p{ margin:0; font-size: 12px;}
+
+#paralax-fg h1	{line-height: 24px;}
+#paralax-fg h1 a {
+	color: #fff;
+	text-shadow: 1px 1px 5px #0005;
+	font-size: 24px;
+}
+
+#paralax-fg img.icons {
+    float: left;
+    width: 220px;
+    margin: -70px 0 0 0;
+}
+
+
+/* ----- Paralax ----- */
+/* ----- Node ----- */
+
+.main-content h1.title {margin-left: 50px;}
+
+.taxonomy-term .field--name-field-image a,
+.node--view-mode-full .field--name-field-image a {
+	display:block; 
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px 25px;
+	box-shadow: 2px 2px 6px #0003;
+}
+
+
+
+
+.node--view-mode-full .field--name-field-file .field__item { display: inline-block; margin: 10px;}
+.node--view-mode-full .field--name-field-file a {
+	display: inline-block; 
+	padding: 5px;
+	border-radius: 5px;
+	margin: 10px;
+	box-shadow: 2px 2px 6px #0003;
+	width: 300px;
+}
+
+.node--view-mode-full .field--name-field-file,
+.node--view-mode-full .field--name-body {
+    margin-left: 270px;
+}
+
+.field--name-field-file .file a {padding-left: 71px;
+    padding-left: 71px;
+    background-size: 53px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    font-size: 0.8em;
+    display: table-cell;
+    vertical-align: middle;
+    height: 53px;
+}
+
+.file--application-pdf a,
+pass{background-image: url(img/pdf-icon.png);}
+.file--mime-application-zip a, 
+pass{background-image: url(img/zip-icon.png);}
+.file--mime-application-msword a, 
+pass{background-image: url(img/word-icon.png);}
+.file--mime-application-xcel a, 
+pass{background-image: url(img/xcel-icon.png);}
+.file--mime-application-vnd-ms-powerpoint a,
+pass{background-image: url(img/ppt-icon.png);}
+
+.list-group-item {
+	padding: 0;
+	border: none;
+}
+
+/* ----- Node ----- */
+/* ----- Teaser ----- */
+
+.node--view-mode-teaser{
+	border: none;
+}
+
+.node--view-mode-teaser h2 a {color: #0071B3;}
+.node--view-mode-teaser .field--name-field-image {
+
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px;
+	box-shadow: 2px 2px 6px #0002;
+	margin: 10px 20px 10px 10px;
+}
+
+/* ----- Teaser ----- */
+/* ----- Tags ----- */
+.field--name-field-tags .field__items li {
+	display: inline-block;
+	font-size: 0.8em;
+	padding: 0 10px;
+}
+
+/* ----- Tags ----- */
+/* ----- Colorbox ----- */
+a.colorbox-insert-image {	display: inline-block;
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px;
+	box-shadow: 2px 2px 6px #0002;
+	margin: 10px 20px 10px 10px;
+}
+/* ----- Colorbox ----- */
+/* ----- Catalog ----- */
+
+
+
+.catalog-block-mini .views-row { clear: both; margin-bottom: 20px; overflow: hidden; }
+.catalog-block-mini .views-field-title { margin-left: 160px; display: block; font-size: 24px; }
+.catalog-block-mini .views-field-body { margin-left: 160px; }
+.catalog-block-mini .views-field-field-image ul { padding: 0; }
+.catalog-block-mini .views-field-field-image { float:left; }
+.catalog-block-mini .views-field-field-image a {
+	display: block;
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px;
+	box-shadow: 2px 2px 6px #0002;
+	margin: 10px 20px 10px 10px;
+}
+
+
+.catalog-block .views-row { clear: both; margin-bottom: 20px; overflow: hidden; }
+.catalog-block .views-field-title { margin-left: 260px; display: block; font-size: 24px; }
+.catalog-block .views-field-body { margin-left: 260px; }
+.catalog-block .views-field-field-image ul { padding: 0; }
+.catalog-block .views-field-field-image { float:left; width: 220px; text-align: right; }
+.catalog-block .views-field-field-image a {
+	display: inline-block;
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px;
+	box-shadow: 2px 2px 6px #0002;
+	margin: 10px 20px 10px 10px;
+}
+
+
+
+/* ----- Catalog ----- */
+/* ----- Catalog_x2 ----- */
+
+.view-catalog-x2 .views-field-field-menu {display: none;}
+
+/* ----- Catalog_x2 ----- */
+/* ----- Footer ----- */
+
+footer.site-footer {
+	width: 100%;
+	
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    box-shadow: 0 -1px 4px #0001;
+	
+}
+
+
+footer.site-footer h1 {
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+footer.site-footer > .container { 
+	max-width: 980px;
+	margin: 10px auto;
+}
+
+
+#block-bottomlogo { width: 220px; float: left; }
+#block-bottomlogo p { margin: 0px 0 5px 0;  text-align: center; color: #777; font-size: 0.8em;}
+#block-bottomlogo h1 { margin: 5px;  text-align: center; }
+
+/* ----- Footer ----- */
+/* ----- Front page ----- */
+
+
+
+.path-frontpage #block-biograd-th-page-title {display: none;} 
+.path-frontpage #block-biograd-th-breadcrumbs {display: none;} 
+.path-frontpage #content {margin:0px;}
+.path-frontpage #block-pagetitle {display:none;}
+
+
+div.vlist 
+{
+	float:left;
+	width: 48%;
+	margin: 1%;
+	min-width: 350px;
+	border-bottom: Solid #ccc 1px;
+	margin-bottom: 10px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius:	10px;	
+	-webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+	display:block;
+	background: #fff;
+}
+
+.front-h2 {clear: both;}
+
+
+.vlist.right {	float:right;}
+
+#content div.vlist h1
+{
+	margin-left: 20px;
+	font-size: 32px;
+	text-shadow: 0px 1px #ccc;
+}
+
+.vlist div.item {
+	padding: 10px 10px 10px 22px; 
+	border-bottom: 1px Solid #ccc;
+	background:#ccc;
+}
+
+
+div.vlist.hlist {
+	width: auto;
+}
+.vlist.hlist div.item{
+	float:left;
+	padding-left: 40px; 
+	padding-right: 40px; 
+	border-bottom: 0px;
+	border-right: 1px Solid #ccc;
+	
+}
+
+/*.vlist div.item:hover { background-color:#eee;}*/
+
+.vlist div.item.first{
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+
+.vlist div.item.last{
+	border-bottom: none;
+	border-bottom-left-radius: 10px;	
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right	-radius: 10px;	
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+}
+
+.vlist div.item{
+	background:no-repeat right 10px;
+}
+
+.vlist div.item.determine{
+	background-image: url("img/Combo_Home_01_sm.png")
+}
+.vlist div.item.pima{
+	background: no-repeat right 0px;
+	background-image: url("img/pima-front.png")
+}
+.vlist div.item.covid{
+	background: no-repeat right 6px #faa;
+	background-image: url("img/lumiratek%20covid-19%20igg%20igm.png")
+}
+
+.vlist div.item.immunocomb{
+	background-image: url("img/front%20immunocomb_sm.png")
+}
+.vlist div.item.abon{
+	background-image: url("img/front%20abon_sm.png")
+}
+.vlist div.item.binax{
+	background-image: url("img/front%20binax_small.png")
+}
+
+.vlist div.item.biogal-immunocomb{
+	background-image: url("img/front%20immunocomb biogal sm.png")
+}
+.vlist div.item.biogal-immunorun{
+	background-image: url("img/front%20immunorun biogal sm.png")
+}
+.vlist div.item.vetline{
+	background: no-repeat right 1px;
+	background-image: url("img/novatec%2050px.png")
+}
+
+
+
+
+#content div.vlist div.item h1
+{
+	margin: 7px 0px 4px 0px;
+	font-size: 24px;
+	text-shadow: 0px 1px #ccc;
+}
+
+.front h2{
+	clear:both;
+}
+
+
+
+.front-producers div.item {background-position: right -4px;}
+.front-producers div.item.lumira		{background-image: url("img/front-producers-lumira.png"); background-position: right 6px;}
+.front-producers div.item.abbott		{background-image: url("img/front-producers-abbott.png"); background-position: right 9px;}
+.front-producers div.item.alere		{background-image: url("img/front-producers-alere.png");}
+.front-producers div.item.orgenics	{background-image: url("img/front-producers-orgenics.png");}
+.front-producers div.item.alere		{background-image: url("img/front-producers-alere.png");}
+.front-producers div.item.binax		{background-image: url("img/front-producers-binax.png");}
+.front-producers div.item.biogal	{background-image: url("img/front-producers-biogal.png");}
+.front-producers div.item.novatec	{background-image: url("img/novatec%20logo%2050px.png");
+					background-position: right 10px center;
+						}
+/*=============================================================================
+   Edit
+=============================================================================*/
+
+#CollapsingNavbar.collapse{
+    position: absolute;
+    left: -180px;
+    width: 150px;
+}
+
+form .field--name-field-menu {
+    float: right;
+    position: absolute;
+    left: 10px;
+    width: 150px;
+}
+
+
+/*=============================================================================
+   Front-medicine
+=============================================================================*/
+.front-test {
+	height: 300px;
+	border-bottom: Solid #ccc 1px;
+	margin-bottom: 10px;
+	padding: 1px 10px 10px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius:	10px;	
+	-webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+	display:block;
+	background: #fff;
+}
+
+
+.front-test.immunocomb{ background:	url("http://biograd.ru/drupal/sites/default/files/front%20immunocomb.png") no-repeat  200px -20px}
+.front-test.determine{ background:	url("http://biograd.ru/drupal/sites/default/files/Combo_Home_01_1.png") no-repeat  304px 72px;}
+.front-test.binax{ background: 		url("http://biograd.ru/drupal/sites/default/files/front%20binax_sm.png") no-repeat  222px 10px;}
+	
+
+/* ----- Front page ----- */
+
+/* ----- Front page ----- */
+
+#CollapsingNavbar { position: absolute; left: 5px;}
+#CollapsingNavbar ul li { overflow: hidden; }
+#CollapsingNavbar ul li a { display: inline-block; padding: 5px 10px; margin: 5px; background: #0007; color: #fff; border-radius: 4px; }
+
+
+/* ----- Front page ----- */
+
